@@ -40,7 +40,7 @@ export default function Header() {
       <div className="w-fit flex justify-center items-center gap-5">
         <div className="relative w-16 h-16 rounded-full">
           <Image
-            src="https://res.cloudinary.com/dueoejo47/image/upload/v1644369675/avatar_oghw9x.jpg"
+            src="/../public/avatar.jpg"
             layout="fill"
             objectFit="cover"
             alt="avatar"
