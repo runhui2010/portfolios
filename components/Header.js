@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Head from "next/Head";
+import Head from "next/head";
 import Link from "next/link";
 import { GoHome } from "react-icons/go";
 import { SiIota } from "react-icons/si";
