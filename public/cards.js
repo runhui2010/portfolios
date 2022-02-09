@@ -18,7 +18,7 @@ export const cards = [
   {
     cover:
       "https://res.cloudinary.com/dueoejo47/image/upload/v1644369685/cake-1_s6wq37.png",
-    path: "https://www.google.com",
+    path: "https://jojo-cake.vercel.app/",
     slide: [],
     stack: [
       "https://res.cloudinary.com/dueoejo47/image/upload/v1644369680/react-logo_ik9qru.svg",
