@@ -5,7 +5,7 @@ export default function ContactModal({ isShowContact, setIsShowContact }) {
   return (
     <motion.div
       key="dialog"
-      className="fixed inset-x-1/3 w-1/3 p-3 bg-blue-500 text-xl text-white font-bold rounded flex  flex-col items-center justify-center shadow-lg shadow-white"
+      className="fixed inset-x-1/5 md:inset-x-1/4  lg:inset-x-1/3 w-5/6 md:w-1/2  lg:w-1/3 p-3 bg-blue-500 text-xl text-white font-bold rounded flex  flex-col items-center justify-center shadow-lg shadow-white"
       initial={{
         y: -1600,
         x: -1150,

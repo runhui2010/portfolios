@@ -31,9 +31,9 @@ export default function Header() {
     },
   };
   return (
-    <div className="w-10/12 flex justify-between items-center m-auto py-2 row-start-1 row-end-2 ">
+    <div className="w-10/12 flex justify-between items-center m-auto p-2 row-start-1 row-end-2 ">
       <Head>
-        <title>Runhui Portfolios</title>
+        <title >Runhui Portfolios</title>
         <meta name="description" content="Full Stack App portfolios" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -47,9 +47,9 @@ export default function Header() {
             className="rounded-full"
           />
         </div>
-        <div className="text-xl">Runhui Huang</div>
+        <div className="text-xl hidden lg:block">Runhui Huang</div>
       </div>
-      <div className="w-fit flex gap-10">
+      <div className="w-fit flex gap-5">
         <Link href="/">
           <a className="flex justify-center items-center gap-2  border-b-4 border-b-black hover:border-b-red-500 p-4 text-2xl">
             <motion.span
@@ -68,7 +68,7 @@ export default function Header() {
               <GoHome className="text-blue-500" />
             </motion.span>
 
-            <span>Home</span>
+            <span className='hidden lg:block'>Home</span>
           </a>
         </Link>
         <Link href="/portfolio">
@@ -83,7 +83,7 @@ export default function Header() {
             >
               <SiIota className="text-blue-500" />
             </motion.span>
-            <span>Portfolio</span>
+            <span className='hidden lg:block'>Portfolio</span>
           </a>
         </Link>
       </div>
