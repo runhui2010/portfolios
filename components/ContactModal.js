@@ -5,7 +5,7 @@ export default function ContactModal({ isShowContact, setIsShowContact }) {
   return (
     <motion.div
       key="dialog"
-      className="fixed inset-x-1/3 w-1/3 h-1/4 bg-blue-500 text-2xl text-white font-bold rounded flex  flex-col items-center justify-center shadow-lg shadow-white"
+      className="fixed inset-x-1/3 w-1/3 p-3 bg-blue-500 text-xl text-white font-bold rounded flex  flex-col items-center justify-center shadow-lg shadow-white"
       initial={{
         y: -1600,
         x: -1150,
@@ -32,12 +32,27 @@ export default function ContactModal({ isShowContact, setIsShowContact }) {
       <div className="w-10/12 flex justify-end">
         <FaRegWindowClose onClick={() => setIsShowContact(!isShowContact)} />
       </div>
-      <a href="https://github.com/runhui2010" className="hover:text-red-500">
+      <a
+        href="https://docs.google.com/document/d/1I3COYqhyoH6hi-Qvu76bFyR146Cy2nMojMG5voeDFUM/edit?usp=sharing"
+        className="hover:text-red-500"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Resume
+      </a>
+      <a
+        href="https://github.com/runhui2010"
+        className="hover:text-red-500"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         GitHub
       </a>
       <a
         href="https://www.linkedin.com/in/runhui-huang-8602561a2/"
         className="hover:text-red-500"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         Linkedin
       </a>

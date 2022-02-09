@@ -7,7 +7,7 @@ export  const cards=[
   },{
     cover:"/../public/cake-1.png",
     path:'https://www.google.com',
-    slide:['/../public/fec-1.png','/../public/fec-2.png','/../public/fec-3.png','/../public/fec-4.png'],
-    stack:['react-logo.svg','nextjs-logo.svg','tailwind-logo.png']
+    slide:['/../public/fec-1.png','/../public/fec-2.png','/../public/fec-3.png','/../public/fec-4.png',],
+    stack:['react-logo.svg','nextjs-logo.svg','tailwind-logo.png','motion-logo.png']
   }
 ]
