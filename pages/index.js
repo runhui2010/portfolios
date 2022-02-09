@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Header />
-      <div className="w-11/12 grid grid-cols-6 mx-auto row-start-2 row-end-7">
+      <div className="w-11/12 flex flex-col lg:grid lg:grid-cols-6 mx-auto row-start-2 row-end-7">
         <AnimatePresence>
           {isShowContact && (
             <ContactModal
@@ -19,22 +19,22 @@ export default function Home() {
             />
           )}
         </AnimatePresence>
-        <div className="col-start-2 col-end-4 flex flex-col justify-center items-start gap-1">
-          <div className="text-8xl">Frontend</div>
-          <div className="text-8xl">Developer</div>
+        <div className="col-start-2 col-end-4 flex flex-col justify-center items-center lg:items-start gap-1">
+          <div className="text-6xl lg:text-8xl">Frontend</div>
+          <div className="text-6xl lg:text-8xl">Developer</div>
           <div className="mt-5">
             I like to craft solid and scalable frontend products with great user
             experience
           </div>
           <button
-            className=" bg-transparent text-red-500 hover:bg-red-500 text-white font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded mt-10"
+            className=" bg-transparent text-red-500 hover:bg-red-500 text-white font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded mt-4 lg:mt-10"
             onClick={() => setIsShowContact(!isShowContact)}
           >
             Contact me
           </button>
         </div>
-        <div className="col-start-5 col-end-7 px-5 flex flex-col justify-center items-center">
-          <div className="text-3xl mb-5 text-blue-500.">Technical Skill</div>
+        <div className="w-full md:w-5/6 mx-auto col-start-5 col-end-7 px-5 flex flex-col justify-center items-center">
+          <div className="mt-10 lg:mt-0 text-2xl lg:text-3xl mb-5 text-blue-500">Technical Skill</div>
           <div className="flex flex-wrap">
             {skillSet.map((skill) => {
               return (

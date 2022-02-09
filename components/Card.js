@@ -6,7 +6,7 @@ export default function Card({ card }) {
 
     return (
       <Link href={card.path}>
-        <a className="border border-4 border-white w-3/5 h-3/5 grid grid-rows-6  hover:scale-110" target={card.path.startsWith('/')?'_parent':'_blank'}>
+        <a className="border border-4 border-white w-full lg:w-3/5 h-3/5 grid grid-rows-6 hover:scale-110" target={card.path.startsWith('/')?'_parent':'_blank'}>
           <div className="relative row-start-1 row-end-6">
             <Image src={card.cover} layout="fill" objectFit="cover" alt="cover" />
           </div>
